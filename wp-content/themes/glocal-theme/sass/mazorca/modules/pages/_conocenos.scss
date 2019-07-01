@@ -1,0 +1,18 @@
+.conocenos {
+	margin-top: 237px;
+	margin-bottom: 3px;
+	@include under(md) {
+		margin-top: 180px;
+	}
+	@include under(sm) {
+		margin-top: 110px;
+    	margin-bottom: 0px;
+	}
+	&__ttl {
+		@extend %title-pages;
+		margin-bottom: 130px;
+		@include under(sm) {
+			margin-bottom: 50px;
+		}
+	}
+}

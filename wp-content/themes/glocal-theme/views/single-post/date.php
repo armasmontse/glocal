@@ -1,0 +1,1 @@
+<p class="single__info-date"><?php echo get_the_date(__('d F Y')); ?></p>

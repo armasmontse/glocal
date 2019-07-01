@@ -1,0 +1,19 @@
+.ediciones {
+	margin-top: 237px;
+
+	@include under(md) {
+		margin-top: 180px;
+	}
+	@include under(sm) {
+		margin-top: 110px;
+	}
+
+	&__ttl {
+		@extend %title-pages;
+		margin-bottom: 135px;
+
+		@include under(sm) {
+			margin-bottom: 50px;
+		}
+	}
+}

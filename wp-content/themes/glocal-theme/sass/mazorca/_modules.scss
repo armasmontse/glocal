@@ -1,0 +1,50 @@
+//_________________________ Modules _________________________ \\
+
+/* _____ G E N E R A L _____ */
+@import "modules/general/_header";
+@import "modules/general/_footer";
+@import "modules/general/_menu";
+@import "modules/general/_header-search";
+@import "modules/general/_header-fixed";
+@import "modules/general/_modal-newsletter";
+@import "modules/general/_error";
+@import "modules/general/_ads";
+
+/* _____ S E C T I O N S_____ */
+@import "modules/sections/_slider-vistos";
+@import "modules/sections/_three-columns";
+@import "modules/sections/_three-columns-categorie";
+@import "modules/sections/_newsletter";
+@import "modules/sections/_two-columns";
+@import "modules/sections/_mas-vistos";
+@import "modules/sections/_one-column-text";
+@import "modules/sections/_redes-sticky";
+@import "modules/sections/_glocalshare";
+
+/* _____ P A G E S _____ */
+@import "modules/pages/_home";
+@import "modules/pages/_single";
+@import "modules/pages/_arquitectura";
+@import "modules/pages/_films";
+@import "modules/pages/_conocenos";
+@import "modules/pages/_publicate";
+@import "modules/pages/_ediciones";
+
+/* _____ H O M E _____ */
+@import "modules/home/_slider-home";
+@import "modules/home/_home-video";
+@import "modules/home/_home-edicion";
+
+/* _____ S I N G L E _____ */
+@import "modules/single/_single-slider";
+@import "modules/single/_masonry";
+@import "modules/single/_masonry-slide";
+@import "modules/single/_modal";
+
+/* _____ F I L M S _____ */
+@import "modules/arquitectura/_one-column";
+@import "modules/arquitectura/_envianos";
+
+/* _____ E D I C I O N E S _____ */
+@import "modules/ediciones/_suscribete";
+@import "modules/ediciones/_lista-portadas";

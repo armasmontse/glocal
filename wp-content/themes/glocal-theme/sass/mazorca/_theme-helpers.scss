@@ -1,0 +1,40 @@
+.line-divisor {
+	border: 3px solid #000;
+    width: 100%;
+    margin: 0px;
+	@include under(sm) {
+		margin: 0px 20px;
+		width: 100%;
+    }
+}
+
+.line-footer-divisor {
+	border: 4px solid #000;
+    width: 96%;
+    margin: 0px auto;
+    @include under(sm) {
+    	width: 100%;
+	    margin: 0px 20px;
+    }
+
+	@include under(xs) {
+		border: 3px solid #000;
+	}
+}
+
+
+%edicion-img-vertical, .edicion-img-vertical  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+#header-leaderboard .grid__container {
+	align-items: center;
+    	justify-content: center;
+}

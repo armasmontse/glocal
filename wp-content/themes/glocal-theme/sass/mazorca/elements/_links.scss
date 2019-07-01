@@ -1,0 +1,47 @@
+%link {
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+%link-header-items, .link-header-items {
+	font-family: f(GillSans);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 21px;
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+%link-footer-items, .link-footer-items {
+	font-family: f(GillSans);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+	color: c(black);
+	@include under(sm) {
+		font-size: 14px;
+		line-height: 12px;
+	}
+
+	&:hover,
+	&:active,
+	.selected {
+	}
+}
+
+
+/* E d i c i ó n */
+%link-edicion, .link-edicion {
+	font-family: f(GillSans);
+	font-size: 22px;
+	line-height: 20px;
+	font-weight: 600;
+}

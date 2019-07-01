@@ -1,0 +1,11 @@
+.publicate {
+	margin-top: 268px;
+	margin-bottom: 300px;
+	@include under(sm) {
+		margin-top: 150px;
+    	margin-bottom: 50px;
+	}
+	&__ttl {
+		@extend %title-pages;
+	}
+}

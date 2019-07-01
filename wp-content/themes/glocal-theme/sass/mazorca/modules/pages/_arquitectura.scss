@@ -1,0 +1,55 @@
+.arquitectura {
+	margin-top: 237px;
+	@include under(md) {
+		margin-top: 180px;
+	}
+	@include under(sm) {
+		margin-top: 110px;
+	}
+
+	&__ttl {
+		@extend %title-pages;
+	}
+
+	.two__columns {
+		padding-bottom: 0;
+		padding-top: 0;
+		margin-bottom: 0;
+
+		@include under(sm) {
+			padding-bottom: 0px;
+		}
+	}
+
+	.two__columns-box {
+		margin-bottom: 50px;
+	}
+
+	/* P u b l i c i d a d */
+	.publicidad {
+	    width: 50vw;
+	    height: 90px;
+	    background: orange;
+	    margin: 0px auto 55px;
+		@include under(sm) {
+		    width: 100%;
+			margin: 0px auto 40px auto;
+		}
+
+		@include under(sm) {
+			margin: 0px auto 35px auto;
+		}
+	}
+
+	/* B o t ó n   v e r   m á s */
+	.box-button {
+		display: flex;
+
+		.button-mas{
+			@extend %button;
+			width: 200px;
+			height: 30px;
+		}
+
+	}
+}

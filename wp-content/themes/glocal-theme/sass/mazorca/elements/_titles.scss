@@ -1,0 +1,158 @@
+%title {
+}
+/* G e n e r a l e s */
+
+%title-sections, .title-sections  {
+	font-family: f(Bembo);
+	font-weight: bold;
+	font-size: 37px;
+	line-height: 30px;
+	@include under(sm) {
+	    font-size: 35px;
+    	line-height: 29px;
+    }
+    @include under(xs) {
+	    font-size: 30px;
+    	line-height: 38px;
+    }
+}
+
+%title-newsletter, .title-newsletter  {
+	font-family: f(Bembo);
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 30px;
+	@include under(sm) {
+		font-size: 35px;
+	   	line-height: 40px;
+	}
+}
+
+/* S i n g l e */
+
+%title-single-header, .title-single-header  {
+	font-family: f(GillSans);
+	// font-weight: bold;
+	font-weight: 600;
+	font-size: 55px;
+	line-height: 53px;
+	@include under(sm) {
+	    font-size: 45px;
+    	line-height: 52px;
+    }
+    @include under(xs) {
+	    font-size: 35px;
+    	line-height: 40px;
+    }
+}
+
+%text-single-header, .text-single-header  {
+	font-family: f(Baskerville);
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 29px;
+	@include under(sm) {
+	    font-size: 18px;
+    	line-height: 22px;
+    }
+}
+
+%link-galeria-single-header, .link-galeria-single-header  {
+	font-family: f(GillSans);
+	font-weight: 600;
+	font-size: 15px;
+	text-transform: uppercase;
+	@include under(sm) {
+	    font-size: 12px;
+    }
+}
+
+
+/* H o m e */
+
+%title-categorie, .title-categorie {
+	font-family: f(GillSans);
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 100;
+	@include under(sm) {
+	    font-size: 12px;
+    	line-height: 15px;
+    }
+}
+
+%title-home, .title-home {
+	font-family: f(Bembo);
+	font-size: 55px;
+	line-height: 53px;
+	font-weight: bold;
+	@include under(sm) {
+	    font-size: 45px;
+    	line-height: 52px;
+    }
+    @include under(xs) {
+	    font-size: 35px;
+    	line-height: 40px;
+    }
+
+}
+
+%home-excerpt, .home-excerpt {
+	font-family: f(GillSans);
+	font-size: 27px;
+	line-height: 28px;
+	@include under(sm) {
+	    font-size: 22px;
+    	line-height: 25px;
+    }
+    @include under(xs) {
+	    font-size: 18px;
+    	line-height: 20px;
+    }
+}
+
+
+/* T h r e e   c o l u m n s   c a t e g o r i e */
+%columns-categories, .columns-categories {
+	@extend %title-categorie;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	@include under(sm) {
+	    font-size: 12px;
+    	line-height: 15px;
+    }
+}
+
+
+/* T i t l e   s e c t i o n*/
+%title-section, .title-section {
+	font-family: f(Bembo);
+	font-size: 40px;
+	line-height: 30px;
+	font-weight: bold;
+	@include under(sm) {
+		font-size: 35px;
+		line-height: 29px;
+	}
+	@include under(xs) {
+		font-size: 30px;
+		line-height: 24px;
+	}
+}
+
+/* P a g e s */
+%title-pages, .title-pages {
+	@extend %title-home;
+	font-size: 65px;
+	@include under(sm) {
+	    font-size: 55px;
+    	line-height: 40px;
+    }
+    @include under(xs) {
+	    font-size: 35px;
+    	line-height: 38px;
+    }
+}

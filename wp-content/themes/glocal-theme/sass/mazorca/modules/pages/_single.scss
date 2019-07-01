@@ -1,0 +1,553 @@
+.single {
+	$col-1: 100%/12;
+	$height-sliderImage: calc(100vh - 217px);
+	$height-bgImage: 820px;
+
+	&__info {
+		
+		&-date {
+			@extend %text-single-info;
+			letter-spacing: 1px;
+		    margin-bottom: 25px;
+		    text-transform: uppercase;
+		}
+
+		&-by {
+			@extend %text-single-info;
+		}
+
+		&-photos {
+			@extend %text-single-info;
+			margin-bottom: 30px;
+		}
+
+		&-link {
+			font-family: f(GillSans);
+			font-size: 24px;
+			line-height: 33px;
+			letter-spacing: 1px;
+			font-weight: 700;
+		    display: block;
+		    margin-bottom: 20px;
+		}
+
+		&-redes {
+			.svg-inline--fa {
+				width: 20px;
+				height: 20px;
+			    margin-right: 22px;
+			    &:hover {
+					color: C(azulClaro);
+			    }
+			}
+		}
+
+		&--footer {
+			margin: 50px 0px 50px 0px;
+			text-align: center;
+			@include under(sm) {
+			    margin: 30px 0px 30px 0px;
+			}
+		}
+
+	}
+
+	&__publicity {
+
+		&-vertical {
+			width: calc(#{$col-1} * 3);
+			position: absolute;
+			right: 43px;
+			top: 0;
+			background-color: #FFA217;
+			// height: 100%;
+			@include under(sm) {
+				width: calc(#{$col-1} * 8);
+				margin: 0 auto;
+				position: initial;
+				height: 90px;
+			}
+		}
+
+		&-horizontal {
+			width: calc(#{$col-1} * 6);
+		    margin: 20px auto 40px auto;
+			background-color: #FFA217;
+			@include under(sm) {
+				width: calc(#{$col-1} * 8);
+				margin: 20px auto 40px auto;
+				position: initial;
+			}
+		}
+	}
+
+	&__content {
+		
+		&--wysiwyg {
+			width: 100%;
+			max-width: 650px;
+			margin-right: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			position: relative;
+			@extend %paragraph-single-text;
+
+			p {
+				margin-bottom: 1.5;
+
+				@include under(sm) {
+					margin-bottom: 20px;
+					width: 100%;
+				}
+				
+				strong, b {
+					font-weight: 700;
+				}
+
+				em, i {
+					font-style: italic;
+				}
+
+				img {
+					margin: 45px auto 43px auto;
+					max-width: 1150px;
+					height: auto;
+				}
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				margin-bottom: 1em;
+				text-align: center;
+				font-family: f(GillSans);
+				font-weight: 600;
+			}
+
+			h1 {
+				font-size: 2.5rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+
+			h3 {
+				font-size: 1.75rem;
+			}
+
+			h4 {
+				font-size: 1.5rem;
+			}
+
+			h5 {
+				font-size: 1.25rem;
+			}
+
+			h6 {
+				font-size: 1.05rem;
+			}
+
+			blockquote {
+				font-family: f(Bembo);
+				font-size: 30px;
+				line-height: 33px;
+				font-weight: 600;
+				@include under(sm) {
+					font-size: 30px;
+					line-height: 35px;
+				}
+				@include under(xs) {
+					font-size: 22px;
+					line-height: 25px;
+				}
+				p {
+					margin-top: 10px;
+					margin-bottom: 15px;
+					max-width: 664px;
+				}
+				p:last-child {
+					font-family: f(GillSans);
+					font-size: 80%;
+					padding-left: 40px;
+					position: relative;
+					&:after {
+						content: "−";
+						position: absolute;
+						top:0;
+						left: 20px;
+						@include under(sm) {
+							left: 0px;
+						}
+					}
+					@include under(sm) {
+						padding-left: 20px;
+					}
+
+					strong {
+						font-weight: 600;
+					}
+				}
+			}
+
+			ul{
+				list-style: inside;
+			}
+
+			ul li blockquote:before{
+				content: "─";
+				margin-right: 10px;
+			}
+
+			ol {
+				list-style-type:decimal;
+			}
+
+			u {
+				text-decoration: underline;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+
+			img {
+				margin: 45px auto 43px auto;
+				max-width: 84%;
+				@include under(sm) {
+					max-width: 100%;
+				}
+			}
+
+		}
+
+		&--ad {
+		}
+	}
+
+	&__cite {
+		margin-left: calc(8.33333% * 1.5);
+		@extend %paragraph-single-cite,
+	}
+
+	&__pieFoto {
+		background-color: c(azulClaro);
+	}
+
+	&__imageMedium{
+		width: 50%;
+		height: auto;
+	    display: flex;
+	    flex-direction: row;
+	    img {
+	    	width: 100%;
+	    	height: $height-bgImage;
+	    	object-fit: cover;
+	    }
+	}
+
+	&__nav {
+		display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+
+	}
+
+	&__tags {
+		margin-bottom: 155px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		@include under(sm) {
+			margin-bottom: 55px;
+		}
+		
+		a {
+			font-family: f(GillSans);
+			font-size: 14px;
+			line-height: 1.5;
+			display: inline;
+			color: c(gray);
+			text-transform: uppercase;
+			font-weight: 600;
+			position: relative;
+			padding: 0px 15px 0px 10px;
+			@include under(xs) {
+				font-size: 18px;
+				line-height: 25px;
+			}
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+			&:before {
+				position: absolute;
+				content:'/';
+				top:0px;
+				right: 0px;
+
+			}
+		}
+	}
+
+	&__parallax {
+		margin-bottom: 25px;
+		
+		@include under(sm) {
+			margin-bottom: 32px;
+		}
+
+		&--image{
+			width: 100%;
+			min-height: calc(100vh - 115px);
+			background: transparent;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__full {
+		margin-bottom: 44px;
+		@include under(sm) {
+			margin-bottom: 32px;
+		}
+		
+		&--image{
+			width: 100%;
+			min-height: calc(100vh - 115px);
+			background: transparent;
+			background-repeat: no-repeat;
+			background-size: cover;
+		    background-position: center;
+		}
+	}
+
+	.home-edicion {
+		margin: 45px 0px 85px 0px;
+	}
+
+	// Sergio new styles.
+
+	&__container {
+		max-width: 1144px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 100%;
+		position: relative;
+		padding: 0 25px;
+		margin: 25px auto;
+
+		&-23-13 {
+			grid-template-columns: 75% 25%;
+
+			@include under(sm) {
+				grid-template-columns: 100%;
+			}
+		}
+	}
+
+	&__ttl {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+		font-weight: 600;
+
+		h1 {
+			font-family: f(GillSans);
+			font-size: 6rem;
+			margin: 0.5em 0;
+
+			@include under(sm) {
+				font-size: 3.5rem;
+			}
+		}
+
+		p {
+			font-family: f(Baskerville);
+			font-size: 2rem;
+			line-height: 1.5;
+			margin: 1em 0;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		background: transparent;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&-caption {
+			// Si quieren ahuevo el caption a lado del texto descomentar esto. Pero si hay otra imágen abajo se va encimar.
+			// position: absolute;
+			// top: 25px;
+			// right: 0;
+			width: 100%;
+			max-width: 250px;
+			margin-left: auto;
+			font-family: f(GillSans);
+			font-weight: 300;
+			text-align: right;
+			font-size: 16px;
+			line-height: 1.3em;
+
+			@include under(sm) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__image-spacing {
+		height: 187px;
+
+		@include under(sm) {
+			height: 90px;
+		}
+	}
+
+	&__video {
+		margin: 0 !important;
+		margin-top: 187px !important;
+
+		@include under(sm) {
+			margin-top: 90px !important;
+		}
+	}
+}
+
+
+
+.grid__col-1-2 {
+
+	.single__content {
+
+		p {
+			width: calc(8.33333% * 12);
+			@include under(sm) {
+    			margin: 0 auto;
+		    }
+		}
+	}
+}
+
+.grid__col-1-1 {
+
+	.single__content {
+
+		p {
+			width: calc(8.33333% * 6);
+			margin-left: calc(8.33333% * 1.45);
+			padding: 0 20px;
+			@include under(md) {
+				width: 50% !important;
+			    margin-right: auto;
+			    margin-left: 0px;
+		    }
+			@include under(sm) {
+				width: 100% !important;
+				padding: 0px;
+			}
+
+			img {
+				margin: 45px auto 43px auto;
+				max-width: 1150px;
+				height: auto;
+				@include under(sm) {
+					margin: 0px auto 30px auto;
+				}
+			}
+		}
+
+
+
+
+		&.plantilla__content {
+			margin-bottom: 25px;
+			p {
+				@extend %text-single-header;
+				// width: calc(8.33333% * 6);
+				width: 100%;
+				max-width: 910px;
+				margin: 0 auto;
+				text-align: center;
+				@include under(md) {
+					width: 100% !important;
+					max-width: 910px;
+				}
+				@include under(sm) {
+					width: 100% !important;
+					padding: 0px;
+				}
+			}
+
+
+		}
+	}
+	p.single__content-image {
+		display: block;
+		width: 100%;
+		// max-width: 1150px;
+		max-width: 85%;
+		height: auto;
+		position: relative;
+		overflow: hidden;
+		    padding-top: 48.4%;
+		margin: 42px auto 45px auto;
+		@include under(md) {
+			max-width: 95%;
+			padding-top:54%;
+		}
+		@include under(sm) {
+			max-width: 100%;
+			padding-top: 60%;
+			margin: 0px auto 25px auto;
+		}
+		img {
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+			margin: 0 auto;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+
+//Si el template es plantilla... se centra titulos y redes
+.plantilla {
+	.single__info {
+		width: 100%;
+	    margin: 0 auto;
+	    text-align: center;
+		&-date {
+			padding-top: 67px;
+			margin-bottom: 0px;
+			@include under(sm) {
+				padding-top: 40px;
+			}
+		}
+
+		&-redes {
+			margin-bottom: 70px;
+			display: block;
+			padding-top: 20px;
+			@include under(sm) {
+				margin-bottom: 30px;
+				padding-top: 0px;
+			}
+		}
+	}
+}

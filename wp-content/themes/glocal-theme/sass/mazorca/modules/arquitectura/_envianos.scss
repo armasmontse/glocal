@@ -1,0 +1,61 @@
+.envianos {
+	$col-1: 100%/12;
+	background-color: c(azulClaro);
+	padding: 60px 0;
+	@include under(sm) {
+		padding: 30px 0;
+	}
+
+	&__content {
+		width: calc(#{$col-1} * 6.2);
+		margin: 0 auto;
+		@include under(sm) {
+			width: calc(#{$col-1} * 12);
+		}
+
+		&-ttl {
+			@extend %title-newsletter;
+			text-align: center;
+			padding-bottom: 15px;
+
+		}
+
+		&-text {
+			@extend %paragraph-envianos-text;
+			text-align: center;
+		}
+
+		&-form {
+			display: flex;
+			margin-top: 40px;
+
+			&-input {
+				@extend %input-newsletter;
+				background-color: c(azulClaro);
+				margin: 0 2vw 0 0;
+			}
+
+			&-button {
+				@extend %button-newsletter;
+			}
+			&-btn-info {
+				@extend %button-newsletter;
+				height: 48px;
+				display: block;
+				width: 196px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 40px auto 0 auto;
+				@include under(sm) {
+					font-size: 16px;
+					height: 35px;
+					max-width: 170px;
+					width: auto !important;
+					margin: 20px auto 0 auto;
+				}
+			}
+		}
+
+	}
+}

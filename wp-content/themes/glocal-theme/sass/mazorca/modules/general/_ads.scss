@@ -1,0 +1,42 @@
+.ads {
+    &__leaderboard {
+        width: 100%;
+        padding-top: 12.364%;
+        background: orange;
+
+        &-box {
+            width: 100%;
+            max-width: 728px;
+            margin: 0 auto;
+        }
+    }
+
+    &__home-leaderboard {
+        width: 100%;
+          padding-top: 9.576%;
+        background: orange;
+
+        &-home{
+            width: 100%;
+            max-width: 940px;
+            margin: 0 auto;
+        }
+    }
+
+    &__square {
+        width: 100%;
+        padding-top: 100%;
+        background: orange;
+
+        &-box {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+
+    &--with-padding {
+        padding: 25px;
+        width: 100%;
+    }
+}

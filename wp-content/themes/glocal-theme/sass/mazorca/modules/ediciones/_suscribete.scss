@@ -1,0 +1,27 @@
+.suscribete {
+	background-color: c(azulClaro);
+	padding: 90px 0;
+	
+	@include under(sm) {
+		padding: 70px 0 45px;		
+	}
+
+	&__box {
+		padding: 0 20px;
+	}	
+
+	.grid__col-1-3 {
+		@include under(md) {
+			width: 100%;
+    	}
+	}
+
+	.grid__col-1-8 {
+		width: 50%;
+
+		@include under(md) {
+			width: 100%;
+			padding: 10px 40px !important;
+    	}
+	}
+}

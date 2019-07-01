@@ -1,0 +1,28 @@
+iframe.instagram-media.instagram-media-rendered {
+    max-width: 499px !important;
+    .EmbedFrame {
+        padding-bottom: 100% !important;
+    }
+    .EmbeddedMediaImage {
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+}
+
+.EmbedFrame {
+    position: relative;
+    padding-bottom: 100% !important;
+}
+.EmbeddedMediaImage {
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.Content.EmbedFrame {
+    padding-bottom: 100% !important;
+}
+img.EmbeddedMediaImage {
+    height: 100% !important;
+    object-fit: cover !important;
+}

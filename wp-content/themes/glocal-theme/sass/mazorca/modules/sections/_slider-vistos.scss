@@ -1,0 +1,99 @@
+.slider__vistos {
+    padding: 65px 0px 60px 0px;
+
+    @include under(sm) {
+        padding: 40px 0px 40px 0px;
+    }
+    @include under(xs) {
+        padding: 30px 0px 30px 0px;
+    }
+
+	.swiper-container {
+      width: 100%;
+      height: auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 38% !important;
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-prev.slider__vistos-prev {
+        background-image: url('../images/prev.svg') !important;
+        left: -2px !important;
+        right: auto !important;
+        width: 20px !important;
+        height: 20px;
+        background-size: 20px 20px !important;
+        top: 48% !important;
+        @include under(xs) {
+            left: 5px !important;
+        }
+
+    }
+
+    .swiper-button-next, .swiper-container-rtl .swiper-button-next.slider__vistos-next {
+        background-image: url('../images/next.svg') !important;
+        right: -2px !important;
+        left: auto !important;
+        width: 20px !important;
+        height: 20px;
+        background-size: 20px 20px !important;
+        top: 48% !important;
+        @include under(xs) {
+            right: 5px !important;
+        }
+    }
+
+    &-ttl {
+        @extend %title-section;
+    	text-align: center;
+        margin-bottom: 67px;
+        @include under(sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-content {
+        width: 100%;
+        height: auto;
+
+	    &--description {
+            @extend %paragraph-slider-vistos-titlepost;
+	    	text-align: center;
+            width: 87%;
+            margin: 20px auto 0px auto;
+	    }
+    }
+
+    &-contImage {
+        position: relative;
+        // width: 90%;
+        // padding-top: 90%;
+        width: 87%;
+        padding-top: 78%;
+        margin: 0 auto;
+        @include under(xs) {
+            width: 100%;
+            padding-top: 89%;
+        }
+        &--image {
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

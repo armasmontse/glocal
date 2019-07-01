@@ -1,0 +1,22 @@
+.three__columns {
+		margin-top: 50px;
+
+	&-ttl {
+		@extend %title-section;
+		margin-bottom: 60px;
+	}
+
+	&-box {
+		margin-bottom: 60px;
+		padding: 0 10px;
+	}
+
+	&-img {
+
+	}
+
+	&-content {
+		@extend %paragraph-slider-vistos-titlepost;
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,51 @@
+//_________________________ Config:Fuentes _________________________ \\
+
+/**
+ * Declare fonts using the Mixin
+ */
+// declara-font-face($font-family, $font-filename, $font-weight: normal, $font-style: normal, $font-stretch: normal)
+
+@include declara-font-face(Dorian, '../fonts/DTLDorianST/DTLDorianST', normal);
+@include declara-font-face(Dorian, '../fonts/DTLDorianST/DTLDorianST-Italic', 400, italic);
+
+
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville', normal, normal);
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville-Italic', normal, italic);
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville-SemiBold', 600, normal);
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville-SemiBoldItalic', 600, italic);
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville-Bold', bold, normal);
+@include declara-font-face(Baskerville, '../fonts/Baskerville/Baskerville-BoldItalic', bold, italic);
+
+
+@include declara-font-face(Bembo, '../fonts/Bembo/Bembo-Regular', normal, normal);
+@include declara-font-face(Bembo, '../fonts/Bembo/Bembo-Semibold', 600, normal);
+@include declara-font-face(Bembo, '../fonts/Bembo/Bembo-SemiboldItalic', 600, italic);
+@include declara-font-face(Bembo, '../fonts/Bembo/Bembo-Bold', bold, normal);
+
+
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-Light', 300, normal);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-LightItalic', 300, italic);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans', 400, normal);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-Italic', 400, italic);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-SemiBold', 600, normal);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-SemiBoldItalic', 600, italic);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-Bold', 700, normal);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-Bold', 700, italic);
+@include declara-font-face(GillSans, '../fonts/GillSans/GillSans-UltraBold', 800, normal);
+
+
+
+/// Refer to font families through mapped variables.
+/// Font families must be written as lists, that is, between parenthesis.
+///
+///
+$fonts:(
+	Bembo:		('Bembo', serif),
+	Dorian:		('Dorian', serif),
+	Baskerville:('Baskerville', serif),
+	GillSans:   ('GillSans', sans-serif)
+);
+
+@function f($font) {
+	@return map-get($fonts, $font);
+}

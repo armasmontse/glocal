@@ -1,0 +1,188 @@
+.header {
+	&__searchbar {
+		z-index: 2;
+		background: transparent;
+		// box-shadow: 0 4px 2px -2px #eee;
+		box-shadow: 0 4px 2px -2px #2e2e2e;
+		width:250px;
+		height: 40px;
+		margin-left: auto;
+		width: 745px;
+		height: 40px;
+		position: absolute;
+		top: 141px;
+		right: 65px;
+
+		display: none;
+	    @include under(md-1400) {
+			top: 122px;
+	    }
+	    @include under(md-1200) {
+			top: 140px;
+			width: 95%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+	    }
+
+	    @include under(sm) {
+	    	top: 59px;
+	        width: 101%;
+	        height: 45px;
+	        box-shadow: none;
+	        border-bottom: 1px solid #eee;
+
+	    }
+	    &-form {
+	    	display: flex;
+	    	@include under(sm) {
+    			padding: 0px 20px;
+			}
+	    }
+		&-submit {
+			display: block;
+			margin-top: 6px;
+			background: none;
+			color: #717171;
+			width: 8%;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+			position: relative;
+		}
+		&-input {
+			display: block;
+			border: 0;
+			outline: none;
+			padding: 0 0 0 10px;
+			height: 42px;
+			line-height: 60px;
+			width: 92%;
+			color: c();
+			font-family: f(GillSans);
+			font-size: 16px;
+			font-weight: 100;
+			position: relative;
+			background-color: transparent;
+			&::placeholder {
+				color: c();
+				font-family: f(GillSans);
+				font-size: 16px;
+				font-weight: 600;
+			}
+			@include under(sm) {
+    			height: 44px;
+    			padding: 0;
+			}
+
+		}
+	}
+
+	&__search-movil {
+		@include over(sm) {
+			display: none;
+		}
+		@include under(sm) {
+			display: block;
+			position: absolute;
+			right: 20%;
+			.header__icon-movil {
+			    display: block;
+			}
+		}
+	}
+
+	&__icon {
+		width: 36px;
+    	height: auto;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+
+		@include under(sm) {
+			padding: 0px 0px;
+			margin: 0 0px;
+			margin-top: -22px;
+		}
+		&-search, &-close {
+			position: relative;
+			@include under(sm) {
+				display: initial;
+				top: 50%;
+			}
+			&:after {
+				position: absolute;
+
+			}
+		}
+
+		//Icono dentro del search
+		&--search {
+			&:after {
+				position: absolute;
+				width: 19px;
+				height: auto;
+				left: 3px;
+				content: url(../images/search.svg);
+				top: 37%;
+				z-index: 1;
+			}
+			@include under(sm) {
+				&:after {
+				    left: 20px;
+					top: 29%;
+				}
+			}
+		}
+		&-submit {
+			&:after {
+				position: absolute;
+				width: 11px;
+				height: auto;
+			    right: 11px;
+				content: url(../images/before-black.svg);
+				top: 13%;
+				z-index: 1;
+			}
+			@include under(sm) {
+				padding-left: 20px;
+				&:after {
+				    right: 0px;
+					top: 19%;
+				}
+			}
+
+		}
+
+		&.close {
+			&:after {
+				width: 15px;
+				height: 15px;
+				left: -11px;
+				top: 4px;
+				padding: 0px 10px;
+    			margin: 0 10px;
+				position: absolute;
+				content: url(../images/menu-close.svg);
+			}
+			.svg-inline--fa{
+				display: none;
+			}
+			.header__icon-search:after{
+				opacity: 0;
+			}
+			@include under(sm) {
+				&:after {
+			    	top: 23px
+			    }
+			}
+		}
+
+		//desaparece la lupita en movil
+		&-movil {
+			@include over(sm) {
+				display: block;
+			}
+		}
+	}
+}

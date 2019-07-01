@@ -1,0 +1,247 @@
+%paragraph {
+    font-family: f(GillSans);
+}
+
+%paragraph-menu-publishing, .paragraph-menu-publishing {
+	font-family: f(Bembo);
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 25px;
+}
+
+%paragraph-menu-text, .paragraph-menu-text {
+	font-family: f(GillSans);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 12px;
+}
+
+%paragraph-newsletter-text, .paragraph-newsletter-text {
+	font-family: f(GillSans);
+	font-size: 20px;
+	line-height: 22px;
+	@include under(sm) {
+		font-size: 21px;
+	   	line-height: 26px;
+	}
+	@include under(sm) {
+		font-size: 18px;
+	   	line-height: 22px;
+	}
+
+}
+
+%paragraph-envianos-text, .paragraph-envianos-text {
+    font-family: f(GillSans);
+	font-size: 20px;
+	line-height: 22px;
+	@include under(sm) {
+		font-size: 21px;
+	   	line-height: 22px;
+	}
+	@include under(sm) {
+		font-size: 18px;
+	   	line-height: 22px;
+	}
+
+}
+
+%text-single-info, .text-single-info  {
+	font-family: f(GillSans);
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 22px;
+	strong {
+		font-weight: 600;
+	}
+    @include under(sm) {
+        font-size: 16px;
+    }
+}
+
+%paragraph-single-slider-pagination, .paragraph-single-slider-pagination  {
+	font-family: f(GillSans);
+	font-size: 16px;
+    font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+}
+
+%paragraph-single-text, .paragraph-single-text  {
+	font-family: f(Baskerville);
+	font-size: 19px;
+	line-height: 1.5;
+}
+
+%paragraph-single-cite, .paragraph-single-cite  {
+	font-family: f(Bembo);
+	// font-size: 50px;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+%paragraph-single-modal-sbtitle, .paragraph-single-modal-sbtitle  {
+	font-family: f(Bembo);
+	font-size: 36px;
+	line-height: 44px;
+	@include under(sm) {
+		font-size: 30px;
+		line-height: 28px;
+	}
+	@include under(xs) {
+		font-size: 25px;
+		line-height: 24px;
+	}
+}
+
+%paragraph-single-modal-text, .paragraph-single-modal-text  {
+	font-family: f(Baskerville);
+	font-size: 24px;
+	line-height: 28px;
+	@include under(sm) {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	@include under(xs) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+%paragraph-slider-vistos-titlepost, .paragraph-slider-vistos-titlepost {
+	font-family: f(GillSans);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+	@include under(sm) {
+		font-size: 20px;
+		line-height: 22px;
+	}
+	@include under(xs) {
+		font-size: 20px;
+		line-height: 22px;
+	}
+}
+
+/* H o m e */
+%paragraph-three-excerpt, .paragraph-three-excerpt {
+	@extend %paragraph;
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 600;
+
+	@include under(sm) {
+	    font-size: 22px;
+    	line-height: 25px;
+    }
+    @include under(xs) {
+	    font-size: 18px;
+    	line-height: 20px;
+    }
+}
+
+/*  O n e   c o l u m n */
+%paragraph-one-column-text, .paragraph-one-column-text {
+	font-family: f(Baskerville);
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 33px;
+
+	@include under(sm) {
+	    font-size: 22px;
+    	line-height: 25px;
+    }
+    @include under(xs) {
+	    font-size: 18px;
+    	line-height: 22px;
+    }
+
+}
+
+/*  T w o   c o l u m n s */
+%paragraph-two-columns-section, .paragraph-two-columns-section {
+	font-family: f(GillSans);
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 16px;
+	letter-spacing: 1px;
+
+}
+
+%paragraph-two-columns-content, .paragraph-two-columns-content {
+	font-family: f(GillSans);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 22px;
+    @include under(xs) {
+	    font-size: 20px;
+    	line-height: 22px;
+    }
+}
+
+%paragraph-masonry-text, .paragraph-masonry-text {
+	font-family: f(Baskerville);
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 33px;
+    @include under(xs) {
+		font-size: 18px;
+		line-height: 25px;
+    }
+}
+
+/* E d i c i ó n */
+%paragraph-edicion, .paragraph-edicion {
+	font-family: f(GillSans);
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 600;
+
+    @include under(sm) {
+	    font-size: 18px;
+    	line-height: 20px;
+    }
+    @include under(xs) {
+	    font-size: 16px;
+    	line-height: 18px;
+    }
+}
+
+/* A r q u i t e c t u r a */
+%paragraph-arq-one, .paragraph-arq-one {
+	font-family: f(GillSans);
+    font-size: 36px;
+    line-height: 35px;
+
+    @include under(sm) {
+	    font-size: 28px;
+    	line-height: 32px;
+    }
+
+    @include under(xs) {
+	    font-size: 22px;
+    	line-height: 26px;
+    }
+}
+
+/* C o n o c e n o s */
+%paragraph-conocenos-title, .paragraph-conocenos-title {
+	font-family: f(Bembo);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+
+    @include under(sm) {
+	    font-size: 22px;
+    	line-height: 25px;
+    }
+}
+
+%paragraph-conocenos-text, .paragraph-conocenos-text {
+	font-family: f(Baskerville);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+
+}
